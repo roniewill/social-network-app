@@ -1,0 +1,10 @@
+html, 
+body {
+    height: 100%;
+
+    .login-box {
+        height: 100% !important;
+        background-image: url('../../assets/images/login_bg.jpeg');
+        background-size: cover;
+    }
+}
