@@ -1,7 +1,9 @@
 <% content_for :content do %>
   <%= render "layouts/admin/header" %>
-  <div class="container mt-5">
-    <%= yield %>
-  </div>
+  <main>
+    <section class="container py-5">
+      <%= yield %>
+    </section>
+  </main>
 <% end %>
 <%= render template: "layouts/application" %>
