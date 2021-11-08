@@ -1,5 +1,4 @@
 class Admin::AdminsController < AdminController
-  
   before_action :set_admin, only: [:edit, :update, :destroy]
 
   def index

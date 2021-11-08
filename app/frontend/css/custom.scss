@@ -2,9 +2,15 @@ html,
 body {
     height: 100%;
 
-    .login-box {
+    .login-admin-box {
         height: 100% !important;
-        background-image: url('../../assets/images/login_bg.jpeg');
+        background-image: url('../../assets/images/admin_bg.jpeg');
+        background-size: cover;
+    }
+
+    .login-user-box {
+        height: 100% !important;
+        background-image: url('../../assets/images/user_bg.jpeg');
         background-size: cover;
     }
 }

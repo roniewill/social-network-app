@@ -1,4 +1,4 @@
-<div class="login-box">
+<div class="<%= resource_name == :admin ? "login-admin-box" : "login-user-box" %>">
   <div class="offset-4 col-4 authentication-inner py-5">
     <div class="card">
       <div class="p-4 p-sm-5">
@@ -6,7 +6,9 @@
           <%= image_tag('logo', style: 'height: 90px;') %>
         </div>
 
-        <h5 class="text-center text-muted font-weight-normal mb-4">Acesso ao Painel Administrativo</h5>
+        <% if resource_name == :admin %>
+          <h5 class="text-center text-muted font-weight-normal mb-4">Acesso ao Painel Administrativo</h5>
+        <% end %>
 
         <% if alert %>
           <div class="d-flex justify-content-center">
@@ -28,6 +30,9 @@
               <%= f.submit 'Entrar', class: "btn btn-primary" %>
             </div>
           </div>
+          <% if resource_name == :user %>
+            <%= link_to "Cadastrar", new_user_registration_path, class: "d-flex justify-content-center align-items-center mt-4" %>
+          <% end %>
         <% end %>
       </div>
     </div>
