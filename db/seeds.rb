@@ -8,3 +8,11 @@
 
 Admin.create(email: "roniewill@gmail.com", password: "admin123")
 puts "Admin created"
+
+User.create( 
+    name: "R. William", 
+    email: "roniewill@gmail.com", 
+    phone: Faker::PhoneNumber.cell_phone, 
+    avatar: Rack::Test::UploadedFile.new(Rails.root.join("spec/support/batman.png")),
+    password: "admin123"
+)
