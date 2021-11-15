@@ -1,6 +1,4 @@
 class User::TimelineController < UserController
-
-    def index
-    end
-
+  def index
+  end
 end
