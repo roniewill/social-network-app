@@ -1,13 +1,13 @@
 <h4>Admins</h4><br>
 
 <table class="table table-striped table-hover">
-  <%= link_to "Novo administrador", new_admin_admin_path, class: "btn btn-primary float-end" %>
+  <%= link_to "New admin", new_admin_admin_path, class: "btn btn-primary float-end" %>
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Nome</th>
+      <th scope="col">Name</th>
       <th scope="col">Email</th>
-      <th scope="col">Criado em</th>
+      <th scope="col">Created at</th>
       <th scope="col"></th>
     </tr>
   </thead>
@@ -18,8 +18,8 @@
         <td><%= admin.name %></td>
         <td><%= admin.email %></td>
         <td><%= admin.created_at.strftime("%d/%m/%Y") %></td>
-        <td><%= link_to "Editar", edit_admin_admin_path(admin), class: "btn btn-warning btn-sm" %></td>
-        <td><%= link_to "Excluir", admin_admin_path(admin), method: :delete, data: {confirm: "Are you sure"}, class: "btn btn-danger btn-sm" %></td>
+        <td><%= link_to "Edit", edit_admin_admin_path(admin), class: "btn btn-warning btn-sm" %></td>
+        <td><%= link_to "Delete", admin_admin_path(admin), method: :delete, data: {confirm: "Are you sure"}, class: "btn btn-danger btn-sm" %></td>
       </tr>
     <% end %>
   </tbody>
