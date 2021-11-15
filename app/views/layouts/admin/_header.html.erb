@@ -9,7 +9,7 @@
         <%= link_to("Admins", admin_admins_path, class: current_page?(admin_admins_path)? "nav-link active" : "nav-link") %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Users</a>
+        <%= link_to("Users", admin_users_path, class: current_page?(admin_users_path)? "nav-link active" : "nav-link") %>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Posts</a>
